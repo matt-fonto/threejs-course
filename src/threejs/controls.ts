@@ -13,6 +13,9 @@ export function createControls() {
   const controls = new OrbitControls(camera, renderedElement);
   controls.enableDamping = true;
   controls.autoRotate = true;
+  controls.autoRotateSpeed = 5;
+  controls.dampingFactor = 0.05;
+  controls.enableZoom = true;
 
   return controls;
 }
