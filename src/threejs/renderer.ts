@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { scene } from "./scene";
 import { camera } from "./camera";
+import { controls } from "./controls";
 
 export let renderer: THREE.WebGLRenderer = new THREE.WebGLRenderer();
 export const canvas = document.querySelector(".webgl");
@@ -17,6 +18,7 @@ if (!canvas) {
 
 // Render loop
 export function animate() {
+  controls.update();
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
