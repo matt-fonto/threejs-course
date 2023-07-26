@@ -1,6 +1,7 @@
 import "./index.css";
 import { animate, renderer } from "./threejs/renderer";
 import { camera, sizes } from "./threejs/camera";
+import * as THREE from "three";
 
 animate();
 

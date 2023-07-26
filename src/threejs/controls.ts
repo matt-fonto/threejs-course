@@ -1,6 +1,5 @@
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { camera } from "./camera";
-import { renderer } from "./renderer";
 
 let renderedElement: any;
 export let controls: OrbitControls;
