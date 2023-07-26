@@ -2,10 +2,10 @@ import * as THREE from "three";
 import { scene } from "./scene";
 
 // Material
-export const material = new THREE.MeshStandardMaterial({ color: "blue" });
+export const material = new THREE.MeshStandardMaterial({ color: "purple" });
 
 // Geometry
-export const geometry = new THREE.OctahedronGeometry(7.15, 1);
+const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 
 // Mesh
 export const mesh = new THREE.Mesh(geometry, material);

@@ -15,5 +15,5 @@ export const camera = new THREE.PerspectiveCamera(
   100
 );
 
-camera.position.z = 20; // Set a distance that ensures the object is within the field of view
+camera.position.z = 50; // Set a distance that ensures the object is within the field of view
 camera.lookAt(mesh.position); // Ensure the camera is looking at the mesh

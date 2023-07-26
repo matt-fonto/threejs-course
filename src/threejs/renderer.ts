@@ -1,10 +1,11 @@
 import * as THREE from "three";
 import { scene } from "./scene";
 import { camera } from "./camera";
-import { controls } from "./controls";
+import { createControls } from "./controls";
 
 export let renderer: THREE.WebGLRenderer = new THREE.WebGLRenderer();
 export const canvas = document.querySelector(".webgl");
+let controls = createControls();
 
 if (!canvas) {
   console.error(
